@@ -55,6 +55,10 @@ PRODUCT_MODEL := Nord N10 5G
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
+# Remove apps
+TARGET_INCLUDE_ACCORD := false
+BUILD_BCR := false
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="OnePlusN10-user 11 RKQ1.201217.002 2311081107 release-keys" \
     BuildFingerprint=OnePlus/OnePlusN10/OnePlusN10:11/RKQ1.201217.002/2311081107:user/release-keys \
@@ -62,3 +66,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OnePlusN10 \
     SystemDevice=OnePlusN10 \
     SystemName=OnePlusN10
+
+
